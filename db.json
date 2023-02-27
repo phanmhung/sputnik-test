@@ -1,0 +1,189 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "gender": "male",
+      "name": "John Smithee",
+      "email": "john.smith@example.com",
+      "password": "password123",
+      "address": "123 Main St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1980-01-01",
+      "registered": "2021-05-01"
+    },
+    {
+      "id": "2",
+      "gender": "female",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "password": "password123",
+      "address": "456 Oak St, Anytown, USA",
+      "phone": "234-567-8901",
+      "dob": "1990-01-01",
+      "registered": "2021-05-02"
+    },
+    {
+      "id": "3",
+      "gender": "male",
+      "name": "David Lee",
+      "email": "david.lee@example.com",
+      "password": "password123",
+      "address": "789 Elm St, Anytown, USA",
+      "phone": "345-678-9012",
+      "dob": "1985-01-01",
+      "registered": "2021-05-03"
+    },
+    {
+      "id": "4",
+      "gender": "female",
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@example.com",
+      "password": "password123",
+      "address": "321 Maple St, Anytown, USA",
+      "phone": "456-789-0123",
+      "dob": "1995-01-01",
+      "registered": "2021-05-04"
+    },
+    {
+      "id": "5",
+      "gender": "male",
+      "name": "Michael Davis",
+      "email": "michael.davis@example.com",
+      "password": "password123",
+      "address": "654 Pine St, Anytown, USA",
+      "phone": "567-890-1234",
+      "dob": "1983-01-01",
+      "registered": "2021-05-05"
+    },
+    {
+      "id": "6",
+      "gender": "female",
+      "name": "Jessica Thompson",
+      "email": "jessica.thompson@example.com",
+      "password": "password123",
+      "address": "987 Cedar St, Anytown, USA",
+      "phone": "678-901-2345",
+      "dob": "1992-01-01",
+      "registered": "2021-05-06"
+    },
+    {
+      "id": "7",
+      "gender": "male",
+      "name": "Christopher Wilson",
+      "email": "christopher.wilson@example.com",
+      "password": "password123",
+      "address": "159 Walnut St, Anytown, USA",
+      "phone": "789-012-3456",
+      "dob": "1982-01-01",
+      "registered": "2021-05-07"
+    },
+    {
+      "id": "8",
+      "gender": "female",
+      "name": "Megan Brown",
+      "email": "megan.brown@example.com",
+      "password": "password123",
+      "address": "753 Oakwood St, Anytown, USA",
+      "phone": "890-123-456"
+    },
+    {
+      "id": "9",
+      "gender": "female",
+      "name": "William Johnson",
+      "email": "william.johnson@test.com",
+      "password": "password1234",
+      "address": "4567 Oak St, Anytown, USA",
+      "phone": "123-456-7891",
+      "dob": "1982-04-20",
+      "registered": "2020-10-21"
+    },
+    {
+      "id": "10",
+      "gender": "male",
+      "name": "William Johnson",
+      "email": "william.johnson@example.com",
+      "password": "password123",
+      "address": "456 Oak St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1982-04-15",
+      "registered": "2020-10-31"
+    },
+    {
+      "id": "11",
+      "gender": "female",
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "password": "password123",
+      "address": "789 Maple St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1991-12-22",
+      "registered": "2020-09-01"
+    },
+    {
+      "id": "12",
+      "gender": "male",
+      "name": "Daniel Lee",
+      "email": "daniel.lee@example.com",
+      "password": "password123",
+      "address": "123 Main St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1985-06-03",
+      "registered": "2020-05-15"
+    },
+    {
+      "id": "13",
+      "gender": "female",
+      "name": "Sophia Rodriguez",
+      "email": "sophia.rodriguez@example.com",
+      "password": "password123",
+      "address": "456 Oak St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1997-09-28",
+      "registered": "2021-02-14"
+    },
+    {
+      "id": "14",
+      "gender": "male",
+      "name": "Ethan Wilson",
+      "email": "ethan.wilson@example.com",
+      "password": "password123",
+      "address": "789 Maple St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1989-11-01",
+      "registered": "2020-12-31"
+    },
+    {
+      "id": "15",
+      "gender": "female",
+      "name": "Avery Martinez",
+      "email": "avery.martinez@example.com",
+      "password": "password123",
+      "address": "123 Main St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1993-07-09",
+      "registered": "2021-01-01"
+    },
+    {
+      "id": "16",
+      "gender": "male",
+      "name": "David Davis",
+      "email": "david.davis@example.com",
+      "password": "password123",
+      "address": "456 Oak St, Anytown, USA",
+      "phone": "123-456-7890",
+      "dob": "1983-02-17",
+      "registered": "2021-02-28"
+    },
+    {
+      "id": "17",
+      "gender": "female",
+      "name": "Olivia Taylor",
+      "email": "olivia.taylor@example.com",
+      "password": "password123",
+      "address": "789 Maple St",
+      "phone": "123-456-7890",
+      "dob": "1983-02-17",
+      "registered": "2021-02-28"
+    }
+  ]
+}
