@@ -184,6 +184,17 @@
       "phone": "123-456-7890",
       "dob": "1983-02-17",
       "registered": "2021-02-28"
+    },
+    {
+      "id": "VKmoy7S",
+      "gender": "male",
+      "name": "Hung",
+      "email": "jjjjj@gmail.com",
+      "password": "122321321",
+      "address": "dasdasd 12323",
+      "phone": "2323213232",
+      "dob": "21-12-2021",
+      "registered": "2023-02-27T15:12:44.124Z"
     }
   ]
 }

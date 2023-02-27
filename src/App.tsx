@@ -72,7 +72,6 @@ function App() {
 
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(5);
-  const totalPages = Math.ceil(users.length / pageSize);
 
   const handlePageChange = (page:number) => {
     setPage(page);

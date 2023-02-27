@@ -15,6 +15,7 @@ import { User } from '../../utils/types';
 import AddUserModal from '../Modal/AddUserModal';
 import DeleteUserModal from '../Modal/DeleteUserModal';
 import UpdateUserModal from '../Modal/UpdateUserModal';
+import ViewFormModal from '../Modal/ViewFormModal';
 
 interface UserTableProps {
   users: User[];
@@ -38,6 +39,7 @@ const UserTable = ({users, onLoadUsers}:UserTableProps) => {
     gender: '',
     password: '',
   });
+  const [selectedUser, setSelectedUser] = useState(null);
 
   const handleDelete = async (userId: string) => {
     await deleteUser(userId);
@@ -52,6 +54,15 @@ const UserTable = ({users, onLoadUsers}:UserTableProps) => {
     await updateUser(user);
     onLoadUsers();
     setShowEditModal(false);
+  };
+
+  const handleViewMore = (user:User) => {
+    //@ts-ignore
+    setSelectedUser(user);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedUser(null);
   };
 
   return (
@@ -91,7 +102,8 @@ const UserTable = ({users, onLoadUsers}:UserTableProps) => {
                     setShowEditModal(true);
                   }}
                 />
-                <Button icon={<FormView />} />
+                <Button icon={<FormView />} 
+                onClick={()=>handleViewMore(user)}/>
               </TableCell>
             </TableRow>
           ))}
@@ -118,6 +130,9 @@ const UserTable = ({users, onLoadUsers}:UserTableProps) => {
           updatedUser={updatedUser}
           setUpdatedUser={setUpdatedUser}
         />
+      )}
+      {selectedUser && (
+        <ViewFormModal selectedUser={selectedUser} onClose={handleCloseModal} />
       )}
     </>
   );

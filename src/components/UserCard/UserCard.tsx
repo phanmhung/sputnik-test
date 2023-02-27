@@ -8,7 +8,7 @@ import {
   CardHeader,
   Text,
 } from 'grommet';
-import { Edit, Trash } from 'grommet-icons';
+import { Edit, FormView, Trash } from 'grommet-icons';
 import { Dispatch, SetStateAction } from 'react';
 import { User } from '../../utils/types';
 
@@ -18,6 +18,7 @@ type Props = {
   setShowDeleteModal: Dispatch<SetStateAction<boolean>>;
   setUpdatedUser: Dispatch<SetStateAction<User>>;
   setShowEditModal: Dispatch<SetStateAction<boolean>>;
+  handleViewMore: (user: User) => void;
 };
 
 function UserCard({
@@ -26,6 +27,7 @@ function UserCard({
   setShowDeleteModal,
   setUpdatedUser,
   setShowEditModal,
+  handleViewMore,
 }: Props) {
   const { name, email, phone, address } = user;
 
@@ -67,6 +69,7 @@ function UserCard({
             setShowEditModal(true);
           }}
         />
+        <Button icon={<FormView />} onClick={() => handleViewMore(user)} />
       </CardFooter>
     </Card>
   );

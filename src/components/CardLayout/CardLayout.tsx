@@ -7,6 +7,7 @@ import DeleteUserModal from '../Modal/DeleteUserModal';
 import UpdateUserModal from '../Modal/UpdateUserModal';
 import UserCard from '../UserCard/UserCard';
 import { createUser, deleteUser, updateUser } from '../../utils/api';
+import ViewFormModal from '../Modal/ViewFormModal';
 
 interface CardLayoutProps {
   users: User[];
@@ -30,6 +31,8 @@ export function CardLayout({ users, onLoadUsers }: CardLayoutProps) {
     gender: '',
     password: '',
   });
+  const [selectedUser, setSelectedUser] = useState(null);
+
   const handleDelete = async (userId: string) => {
     await deleteUser(userId);
   };
@@ -44,6 +47,14 @@ export function CardLayout({ users, onLoadUsers }: CardLayoutProps) {
     onLoadUsers();
     setShowEditModal(false);
   };
+  const handleViewMore = (user:User) => {
+    //@ts-ignore
+    setSelectedUser(user);
+  };
+  const handleCloseModal = () => {
+    setSelectedUser(null);
+  };
+
   return (
     <>
       <Box pad="medium">
@@ -56,6 +67,7 @@ export function CardLayout({ users, onLoadUsers }: CardLayoutProps) {
               setShowDeleteModal={setShowDeleteModal}
               setUpdatedUser={setUpdatedUser}
               setShowEditModal={setShowEditModal}
+              handleViewMore={handleViewMore}
             />
           ))}
         </Box>
@@ -80,6 +92,9 @@ export function CardLayout({ users, onLoadUsers }: CardLayoutProps) {
           updatedUser={updatedUser}
           setUpdatedUser={setUpdatedUser}
         />
+      )}
+      {selectedUser && (
+        <ViewFormModal selectedUser={selectedUser} onClose={handleCloseModal} />
       )}
     </>
   );
